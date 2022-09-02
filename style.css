@@ -13,7 +13,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #ffffff;
-  /* min-height: 100vh; */
+  min-height: 200vh;
   /* position: relative; */
   overflow-x: hidden;
 }
@@ -23,7 +23,7 @@ body {
   top: 0;
   left: 0;
   height: 3rem;
-  width: 100%;
+  width: 100vw;
   background-color: var(--bg-color);
   padding: 0.3rem 1rem;
   display: flex;
@@ -234,9 +234,34 @@ main {
 }
 
 .hero-ac {
-  height: 5rem;
-  width: auto;
-  position: absolute;
-  left: -5rem;
-  bottom: -5.5rem;
+  height: auto;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.feature-item {
+  margin-bottom: 2rem;
+}
+
+.feature-title {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  width: 80%;
+  margin: 0 auto 0.5rem;
+}
+
+.feature-title span {
+  color: var(--bg-color);
+}
+
+.feature-desc p {
+  font-size: 0.6875rem;
+  font-weight: 400;
+  width: 80%;
+  margin: 0 auto 0.5rem;
+}
+
+.feature-img {
+  width: 90%;
 }
