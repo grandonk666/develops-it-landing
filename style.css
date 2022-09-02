@@ -1,6 +1,6 @@
 :root {
   --bg-color: #a5c8f1;
-  --primary-color: #1c3679;
+  --primary-color: #394c7b;
   --secondary-color: #b6c3e7;
 }
 
@@ -13,7 +13,6 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #ffffff;
-  min-height: 200vh;
   /* position: relative; */
   overflow-x: hidden;
 }
@@ -319,6 +318,58 @@ main {
 }
 
 .footer {
-  min-height: 50vh;
+  padding: 0 2rem 3rem;
   background-color: var(--primary-color);
+}
+
+.footer-logo {
+  height: 3rem;
+}
+
+.footer-logo a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 0.5rem;
+}
+
+.footer-logo h1 {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-logo img {
+  height: 100%;
+}
+
+.footer-list {
+  display: flex;
+  gap: 1rem;
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.footer-nav {
+  width: 50%;
+}
+
+.footer-title {
+  font-size: 0.6875rem;
+  color: var(--secondary-color);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.footer-content {
+  list-style: none;
+  font-size: 0.6875rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.footer-content li {
+  margin-bottom: 0.5rem;
 }
