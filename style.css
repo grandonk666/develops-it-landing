@@ -274,11 +274,6 @@ main {
   width: 90%;
 }
 
-.portfolio {
-  min-height: 60vh;
-  background-color: var(--secondary-color);
-}
-
 .contact {
   padding: 2rem 0 0;
   position: relative;
@@ -372,4 +367,29 @@ main {
 
 .footer-content li {
   margin-bottom: 0.5rem;
+}
+
+.slide-item img {
+  width: 80%;
+  height: 26rem;
+  object-fit: cover;
+  object-position: top center;
+  padding: 1rem 0;
+}
+
+.splide__pagination {
+  bottom: -1.5rem;
+}
+
+.splide__arrow {
+  background: var(--primary-color);
+}
+
+.splide__pagination__page.is-active {
+  background: var(--primary-color);
+}
+
+.portfolio {
+  padding: 2rem 0 3rem;
+  background-color: var(--secondary-color);
 }

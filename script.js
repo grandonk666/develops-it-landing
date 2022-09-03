@@ -8,3 +8,13 @@ humberger.addEventListener("click", () => {
   });
   nav.classList.toggle("active");
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  new Splide(".splide", {
+    type: "loop",
+    padding: "3rem",
+    gap: "3rem",
+    arrows: false,
+    pagination: true,
+  }).mount();
+});
