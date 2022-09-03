@@ -369,12 +369,16 @@ main {
   margin-bottom: 0.5rem;
 }
 
+.slide-item {
+  padding: 0.5rem 0;
+}
+
 .slide-item img {
   width: 80%;
   height: 26rem;
   object-fit: cover;
   object-position: top center;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 
 .splide__pagination {

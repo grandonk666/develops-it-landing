@@ -12,9 +12,16 @@ humberger.addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", () => {
   new Splide(".splide", {
     type: "loop",
-    padding: "3rem",
+    fixedWidth: "30%",
     gap: "3rem",
+    focus: "center",
     arrows: false,
     pagination: true,
+    breakpoints: {
+      600: {
+        fixedWidth: "100%",
+        padding: "3rem",
+      },
+    },
   }).mount();
 });
