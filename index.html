@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
@@ -19,6 +19,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"
@@ -61,13 +62,22 @@
 
     <main>
       <div class="hero container">
-        <h2 class="hero-title">Make It Digital!</h2>
-        <p>
-          Dapatkan website yang keren dan sesuai dengan kebutuhan bisnis anda
-        </p>
+        <div class="hero-desc">
+          <p class="hero-subtitle desktop-only">
+            Selamat datang di Develops.It
+          </p>
+          <h2 class="hero-title">Make It Digital!</h2>
+          <p>
+            Dapatkan website yang keren dan sesuai dengan kebutuhan bisnis anda
+          </p>
+          <div class="hero-cta desktop-only">
+            <a class="btn btn-primary" href="#">Selengkapnya</a>
+            <a class="btn btn-secondary" href="#">Selengkapnya</a>
+          </div>
+        </div>
         <img class="hero-image" src="/img/hero.png" alt="" />
 
-        <div class="services">
+        <div class="services mobile-only">
           <h3 class="services-title">Buat website sekarang dan dapatkan:</h3>
           <div class="service-list">
             <div class="service-item">
@@ -99,7 +109,8 @@
         </div>
       </div>
 
-      <img class="hero-ac" src="/img/hero-ac.svg" alt="" />
+      <img class="hero-ac mobile-only" src="/img/hero-ac.svg" alt="" />
+      <img class="hero-ac desktop-only" src="/img/hero-ac-desk.svg" alt="" />
 
       <div class="feature container">
         <div class="feature-item">

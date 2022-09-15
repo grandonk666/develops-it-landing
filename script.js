@@ -1,12 +1,25 @@
 const humberger = document.querySelector(".humberger-menu");
 const bars = document.querySelectorAll(".humberger-menu div");
 const nav = document.querySelector(".nav-links");
+const root = document.documentElement;
 
 humberger.addEventListener("click", () => {
   bars.forEach((element) => {
     element.classList.toggle("active");
   });
   nav.classList.toggle("active");
+});
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= 30) {
+    root.style.setProperty("--nav-color", "#000000");
+    root.style.setProperty("--nav-bg", "#ffffff");
+    root.style.setProperty("--nav-shadow", "0px 2px 10px rgba(0, 0, 0, 0.25)");
+  } else {
+    root.style.setProperty("--nav-color", "#ffffff");
+    root.style.setProperty("--nav-bg", "#6eaa73");
+    root.style.setProperty("--nav-shadow", "none");
+  }
 });
 
 document.addEventListener("DOMContentLoaded", () => {
