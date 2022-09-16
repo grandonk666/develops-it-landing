@@ -3,6 +3,9 @@ const bars = document.querySelectorAll(".humberger-menu div");
 const nav = document.querySelector(".nav-links");
 const root = document.documentElement;
 
+const navColor = root.style.getPropertyValue("--nav-color");
+const navBg = root.style.getPropertyValue("--nav-bg");
+
 humberger.addEventListener("click", () => {
   bars.forEach((element) => {
     element.classList.toggle("active");
@@ -16,8 +19,8 @@ window.addEventListener("scroll", () => {
     root.style.setProperty("--nav-bg", "#ffffff");
     root.style.setProperty("--nav-shadow", "0px 2px 10px rgba(0, 0, 0, 0.25)");
   } else {
-    root.style.setProperty("--nav-color", "#ffffff");
-    root.style.setProperty("--nav-bg", "#6eaa73");
+    root.style.setProperty("--nav-color", navColor);
+    root.style.setProperty("--nav-bg", navBg);
     root.style.setProperty("--nav-shadow", "none");
   }
 });
