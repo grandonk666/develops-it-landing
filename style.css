@@ -412,7 +412,7 @@ main {
 }
 
 .slide-item {
-  padding: 0.5rem 0;
+  padding: 1rem 0;
 }
 
 .slide-item img {
@@ -420,7 +420,7 @@ main {
   height: 26rem;
   object-fit: cover;
   object-position: top center;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
 }
 
 .splide__pagination {
@@ -494,8 +494,8 @@ main {
   }
 
   .hero {
-    min-height: 100vh;
-    padding-top: 3rem;
+    /* min-height: 100vh; */
+    padding-top: 8rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -733,7 +733,32 @@ main {
     padding: 0 10rem;
   }
 
+  .hero {
+    min-height: 100vh;
+    padding-top: 3rem;
+  }
+
   .hero .hero-image {
     right: 10rem;
+  }
+
+  .feature,
+  .portfolio {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .services {
+    text-align: center;
+    padding-bottom: 10rem;
+  }
+
+  .contact {
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+  }
+
+  .footer {
+    padding-bottom: 4rem;
   }
 }
