@@ -445,11 +445,6 @@ main {
 }
 
 @media screen and (min-width: 768px) {
-  :root {
-    --nav-color: #000000;
-    --nav-bg: #ffffff;
-  }
-
   .mobile-only {
     display: none;
   }
@@ -459,13 +454,21 @@ main {
   }
 
   .container {
-    padding: 0 10rem;
+    padding: 0 4rem;
   }
 
   .navbar {
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 10rem;
+    padding: 0 4rem;
+  }
+
+  .nav-item a {
+    font-size: 0.875rem;
+  }
+
+  main {
+    text-align: left;
   }
 
   .nav-logo h1 {
@@ -480,7 +483,7 @@ main {
 
   .nav-links {
     position: static;
-    width: 30%;
+    width: 40%;
     height: 100%;
     background: none;
     flex-direction: row;
@@ -488,14 +491,6 @@ main {
     transform: translateX(0);
     color: inherit;
     opacity: 1;
-  }
-
-  .nav-item a {
-    font-size: 0.875rem;
-  }
-
-  main {
-    text-align: left;
   }
 
   .hero {
@@ -514,7 +509,7 @@ main {
 
   .hero .hero-image {
     position: absolute;
-    right: 10rem;
+    right: 4rem;
     top: 50%;
     transform: translateY(-50%);
     width: 35%;
@@ -583,6 +578,10 @@ main {
   .portfolio {
     padding-top: 3rem;
     padding-bottom: 4rem;
+  }
+
+  .porto-ac {
+    width: 100%;
   }
 
   .slide-item {
@@ -709,5 +708,32 @@ main {
 
   .footer-content li {
     margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    --nav-color: #000000;
+    --nav-bg: #ffffff;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: block;
+  }
+
+  .container {
+    padding: 0 10rem;
+  }
+
+  .navbar {
+    padding: 0 10rem;
+  }
+
+  .hero .hero-image {
+    right: 10rem;
   }
 }
