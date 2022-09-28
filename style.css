@@ -444,7 +444,7 @@ main {
   text-align: center;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   :root {
     --nav-color: #000000;
     --nav-bg: #ffffff;
