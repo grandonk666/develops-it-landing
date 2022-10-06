@@ -103,7 +103,7 @@ body {
   color: inherit;
 }
 
-.nav-logo h1 {
+.nav-logo .logo-text {
   font-size: 0.8125rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -371,7 +371,7 @@ main {
   gap: 0.5rem;
 }
 
-.footer-logo h1 {
+.footer-logo .logo-text {
   font-size: 0.8125rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -471,7 +471,7 @@ main {
     text-align: left;
   }
 
-  .nav-logo h1 {
+  .nav-logo .logo-text {
     font-size: 1rem;
     font-weight: 700;
     margin-left: 0.3rem;
@@ -677,7 +677,7 @@ main {
     height: 6rem;
   }
 
-  .footer-logo h1 {
+  .footer-logo .logo-text {
     font-size: 2rem;
   }
 
